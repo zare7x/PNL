@@ -1,0 +1,168 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+header{
+  width: 100%;
+  min-height: 7vh;
+  background-color: #36405e;
+  position: fixed;
+}
+
+#accueil{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image:linear-gradient(to bottom, rgba(104,240,254,0),
+  rgba(0, 0, 0, 0.8)),url(/bg.png) ;
+
+  display: flex;
+
+
+}
+header{
+  width: 100%;
+  min-height: 7vh;
+}
+nav {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  
+}
+h2{
+  color: white;
+  padding: 7px;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+ 
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 7px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #ffffff;
+  height: 3px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+nav.fill ul li a {
+  transition: all 2s;
+}
+
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #023f1c;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+#chpt1{
+  width: 100%;
+  min-height: 100vh;
+}
+#chpt2{
+  width: 100%;
+  min-height: 100vh;
+}
+#chpt3{
+  width: 100%;
+  min-height: 100vh;
+}
+#chpt4{
+  width: 100%;
+  min-height: 100vh;
+}
+#chpt5{
+  width: 100%;
+  min-height: 100vh;
+}
+#chpt6{
+  width: 100%;
+  min-height: 100vh;
+}
+.all{
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(/bgg.png);
+  background-attachment: fixed;
+}
+.home{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.home h1 {
+  color: white;
+  font-size: 1000%;
+}
+.home p{
+  margin-top: 2rem;
+  color: white;
+  font-size: 150%;
+}
+.chpt1{
+  padding: 2rem;
+  width: 50%;
+  font-size: 170%;
+  
+}
+.chpt1 h1{
+  color: #36405e;
+  margin-top: 7rem;
+  margin-bottom: 2rem;
+}
+.chpt1 p{
+  text-align: justify;
+}
