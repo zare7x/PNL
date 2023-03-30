@@ -173,7 +173,7 @@ input[type="checkbox"]{
   .all{
     width: 100%;
     min-height: 100vh;
-    background-image: url(/bgg/bgg__sm_00000.png);
+    background-image: url(/bgg__sm_00000.png);
     background-size: cover;
     background-attachment: fixed;
     
